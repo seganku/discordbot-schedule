@@ -40,3 +40,20 @@ echo "CLIENT_ID=your_bot_client_id_here" >> .env
 ```bash
 python bot.py
 ```
+
+## First Run Setup
+The bot will:
+* Create scheduled_notifications.db automatically
+* Print an invite URL with required permissions
+You can use the printed invite URL to add the bot to your server
+
+### Command Reference
+| Command |	Description |	Example |
+|:--------|:------------|:--------|
+| /schedule #channel YYYY-MM-DD HH:MM message | Schedule a notification	| /schedule #general 2024-12-25 00:00 "Merry Christmas!" |
+| /scheduled | List all scheduled notifications |  |
+| /unschedule ID | Remove a scheduled notification | /unschedule 5 |
+| /schedule_help | Show command help |  |
+
+
+
