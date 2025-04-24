@@ -2,7 +2,7 @@
 
 ## Prerequisites
 - Python 3.9 or higher
-- ([Discord bot token](https://discord.com/developers/applications))
+- [Discord bot token](https://discord.com/developers/applications)
 
 ## Installation
 
