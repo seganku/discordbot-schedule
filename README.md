@@ -8,23 +8,26 @@
 
 ### 1. Clone the repository (if applicable)
 ```bash
-git clone https://github.com/your-repo/discord-scheduler-bot.git
-cd discord-scheduler-bot
+git clone https://github.com/seganku/schedule-notifications.git
 ```
+
 ### 2. Set up virtual environment (recommended)
 ```bash
-python -m venv venv
+python -m venv schedule-notifications
+cd schedule-notifications
 
 # Activate on Linux/Mac:
-source venv/bin/activate
+source bin/activate
 
 # Activate on Windows:
-.\venv\Scripts\activate
+.\Scripts\activate
 ```
+
 ### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
+
 ### 4. Configure Environment
 Create a `.env` file with:
 ```bash
