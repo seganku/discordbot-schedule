@@ -1,4 +1,4 @@
-# Discord Notification Scheduler Bot - Installation & Usage
+# Discord Schedule Notifications Bot - Installation & Usage
 
 ## Prerequisites
 - Python 3.9 or higher
