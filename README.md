@@ -44,8 +44,7 @@ python bot.py
 ## First Run Setup
 The bot will:
 * Create scheduled_notifications.db automatically
-* Print an invite URL with required permissions
-You can use the printed invite URL to add the bot to your server
+* Print an invite URL with required permissions (can be used to add the bot to your server)
 
 ### Command Reference
 | Command |	Description |	Example |
