@@ -49,14 +49,16 @@ class NotificationBot(commands.Bot):
             self.connected = True
             self.retry_count = 0
             self.last_connect_time = datetime.datetime.now(UTC)
+            log(f"Successfully reconnected to Discord as {self.user} (ID: {self.user.id})")
+        else:
             log(f"Logged in as {self.user} (ID: {self.user.id})")
-            log("------")
             self.check_scheduled_notifications.start()
             self.print_invite_url()
 
     async def on_disconnect(self):
-        self.connected = False
-        log("Disconnected from Discord. Will attempt to reconnect...")
+        if self.connected:
+            self.connected = False
+            log("Disconnected from Discord. Attempting to reconnect...")
 
     def print_invite_url(self):
         permissions = nextcord.Permissions()
