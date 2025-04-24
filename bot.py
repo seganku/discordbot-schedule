@@ -1,5 +1,3 @@
-#!/home/mn/Schedule/bin/python3
-
 import os
 import sqlite3
 import datetime
